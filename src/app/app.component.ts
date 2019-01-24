@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'MonProjet-UnitTests';
+
+
+  additionner(a: number, b: number): number {
+    if (a > 0) {
+      return a + b;
+    } else {
+      return a + b;
+    }
+  }
 }

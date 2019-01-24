@@ -1,5 +1,5 @@
-import { TestBed, async } from '@angular/core/testing';
-import { AppComponent } from './app.component';
+import {TestBed, async} from '@angular/core/testing';
+import {AppComponent} from './app.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -28,4 +28,11 @@ describe('AppComponent', () => {
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('h1').textContent).toContain('Welcome to MonProjet-UnitTests!');
   });
+
+  it(`should return 10 when adding 4 and  6 '`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.debugElement.componentInstance;
+    expect(app.additionner(4, 6)).toEqual(10);
+  });
+
 });
